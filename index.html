@@ -22,16 +22,9 @@ scroll-snap-type: x mandatory;
 .carrousel_ecran {
     width: 100%;
     flex:none;
-    scroll-snap-align: start;
+    scroll-snap-align: start;}
 
-}
-
-.carrousel_ecran figure {
-    margin: 0;
-  }
-
-
-  .carrousel {
+    .carrousel {
   position: relative;
 }
 
@@ -55,7 +48,12 @@ scroll-snap-type: x mandatory;
 
 .carrousel_btn-apres {
   right: 0;
+
 }
+
+.carrousel_ecran figure {
+    margin: 0;
+  }
 
 </style>
 
@@ -66,7 +64,7 @@ scroll-snap-type: x mandatory;
  <div class="carrousel" x-data="{}">
     <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
     <div class="carrousel_parent-ecrans" x-ref="parent">
-        <div id="ecran-1" class="carrousel_ecran">
+        <div id="ecran-1" class="carrousel_ecran" >
             <figure>
                 <img src="https://picsum.photos/seed/1/500/300" alt="image ecran 1">
                 <figcaption>Ecran 1</figcaption>
